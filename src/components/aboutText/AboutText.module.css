@@ -1,0 +1,22 @@
+.aboutTextContainer h2 {
+  padding-bottom: 1rem;
+}
+.teamsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.textContainer {
+  max-width: 500px;
+}
+@media (max-width: 1024px) {
+  .teamsContainer {
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .teamsContainer {
+    flex-direction: column;
+  }
+}

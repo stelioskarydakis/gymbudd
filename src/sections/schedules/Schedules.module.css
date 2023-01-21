@@ -1,0 +1,12 @@
+.schedule {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.schedule h2 {
+  padding: 1rem 0 3rem;
+  font-weight: var(--font-weight-bold) !important;
+}

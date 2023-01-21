@@ -1,0 +1,46 @@
+.info-container {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.leftside {
+  max-width: 475px;
+}
+.rightsideCol {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .rightsideCol::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: var(--primary-color);
+  }
+}
+.rightside {
+  max-width: 350px;
+  height: 100%;
+  padding-left: 3rem;
+}
+@media (max-width: 768px) {
+  .rightside {
+    padding-left: 0;
+    padding-top: 3rem;
+  }
+}
+.info-container h2 {
+  padding-bottom: 1rem;
+}
+.info-container h4 {
+  padding-bottom: 1.5rem;
+}
+.info-container h3 {
+  padding-bottom: 1.5rem;
+}
+.info-container strong {
+  display: block;
+}
+.info-container .member-btn {
+  padding-top: 1.5rem;
+}

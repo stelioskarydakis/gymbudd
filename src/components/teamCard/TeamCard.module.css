@@ -1,0 +1,21 @@
+.teamCard {
+  max-width: 300px;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition-hover);
+}
+.teamCard:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+.teamCard h4 {
+  padding: 1rem 0 0.375rem;
+}
+
+.socialIcon {
+  padding-top: 0.5rem;
+}
+.socialIcon a {
+  font-size: 1.2rem;
+}
+.socialIcon a:hover {
+  color: var(--primary-color);
+}

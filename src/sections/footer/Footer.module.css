@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1.5rem 0;
+}
+.footer p {
+  color: var(--white-color);
+}
+.link .text {
+  color: var(--white-color) !important;
+}
+.link .icon {
+  color: var(--link-color) !important;
+  padding-right: 0.5rem;
+  display: inline-block;
+}

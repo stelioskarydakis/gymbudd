@@ -1,0 +1,48 @@
+table {
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  table {
+    overflow-x: scroll !important;
+  }
+}
+thead {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-color: var(--table-border-color) !important;
+}
+tbody {
+  color: var(--white-color);
+  border-color: var(--table-border-color) !important;
+}
+tbody tr td:first-child {
+  background-color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+}
+th,
+td {
+  padding: 1rem !important;
+  border-color: var(--table-border-color) !important;
+  font-weight: var(--font-weight-highbold);
+  min-width: 150px !important;
+}
+td span {
+  display: block;
+  color: var(--p-color);
+  font-size: 0.75rem;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #909090;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #f13a11;
+}

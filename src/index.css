@@ -1,0 +1,225 @@
+/*
+
+GymBudd styles
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --primary-color: #f13a11;
+  --white-color: #ffffff;
+  --dark-color: #171819;
+  --about-bg-color: #f9f9f9;
+
+  --gray-color: #909090;
+  --link-color: #404040;
+  --p-color: #666262;
+
+  --base-font-family: "Inter", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-light: 300;
+  --font-weight-bold: 600;
+  --font-weight-highbold: 700;
+  --font-weight-extrabold: 800;
+
+  --h1-font-size: 48px;
+  --h1-font-size-mobile: 36px;
+  --h2-font-size: 36px;
+  --h2-font-size-mobile: 24px;
+  --h3-font-size: 28px;
+  --h3-font-size-mobile: 20px;
+  --h4-font-size: 24px;
+  --h4-font-size-mobile: 20px;
+  --h5-font-size: 22px;
+  --h5-font-size-mobile: 20px;
+  --h6-font-size: 22px;
+  --h6-font-size-mobile: 20px;
+  --p-font-size: 18px;
+  --base-font-size: 16px;
+  --menu-font-size: 18px;
+
+  --border-radius-large: 100%;
+  --border-radius-small: 2px;
+
+  --table-border-color: #212122;
+
+  --card-shadow: 0px 4px 17px 1px rgba(0, 0, 0, 0.5);
+  --card-shadow-hover: 0px 4px 17px 1px rgba(0, 0, 0, 0.6);
+
+  --transition-hover: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  background: var(--white-color);
+  font-family: var(--base-font-family);
+}
+
+/*---------------------------------------
+     TYPOGRAPHY              
+  -----------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-thin);
+  line-height: normal;
+  margin: 0 !important;
+}
+
+h1 {
+  font-size: var(--h1-font-size) !important;
+  font-weight: var(--font-weight-extrabold) !important;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: var(--h1-font-size-mobile) !important;
+  }
+}
+
+h2 {
+  font-size: var(--h2-font-size) !important;
+  font-weight: var(--font-weight-bold) !important;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: var(--h3-font-size) !important;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+h4 {
+  font-size: var(--h4-font-size) !important;
+}
+
+h5 {
+  font-size: var(--h5-font-size) !important;
+}
+
+h6 {
+  color: var(--gray-color);
+  font-size: var(--h6-font-size) !important;
+  line-height: inherit;
+  margin: 0;
+}
+@media (max-width: 500px) {
+  h6 {
+    font-size: var(--h6-font-size-mobile) !important;
+  }
+}
+
+p {
+  color: var(--p-color);
+  font-size: var(--p-font-size) !important;
+  font-weight: var(--font-weight-light);
+  line-height: 1.5em;
+}
+
+b,
+strong {
+  font-weight: var(--font-weight-extrabold) !important;
+  letter-spacing: 0;
+}
+
+.section {
+  padding: 7rem 0;
+}
+
+/* BUTTON */
+
+.custom-btn {
+  background: transparent;
+  border-radius: var(--border-radius-small);
+  padding: 14px 24px;
+  color: var(--white-color) !important;
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-normal);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  color: var(--primary-color) !important;
+}
+
+.custom-btn:focus {
+  box-shadow: none;
+}
+
+.custom-btn.bordered-btn:hover,
+.custom-btn.bordered-btn:focus,
+.custom-btn.bg-color:hover,
+.custom-btn.bg-color:focus {
+  background: var(--white-color);
+  border-color: transparent;
+  color: var(--primary-color);
+}
+
+.bordered-btn {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.bg-color {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+.filled-btn,
+.btn-primary {
+  background: var(--primary-color) !important;
+  color: var(--white-color) !important;
+  border: 1px solid var(--white-color) !important;
+}
+.filled-btn:hover {
+  border: 1px solid var(--primary-color);
+  background: var(--white-color) !important;
+  color: var(--primary-color);
+}
+/*---------------------------------------
+     GENERAL               
+  -----------------------------------------*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--link-color) !important;
+  font-weight: normal;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: var(--primary-color);
+  outline: none;
+  text-decoration: none;
+}
+section {
+  padding: 5.4rem 0 5rem;
+}
+@media (max-width: 500px) {
+  section {
+    padding: 3.5rem 0;
+  }
+}

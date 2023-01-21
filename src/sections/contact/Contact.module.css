@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+  .rightsideCol::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: var(--primary-color);
+  }
+}
+
+.rightsideCol {
+  position: relative;
+}

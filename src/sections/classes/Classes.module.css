@@ -1,0 +1,10 @@
+.classes h2 {
+  padding: 1rem 0 3rem;
+  font-weight: var(--font-weight-bold) !important;
+}
+.classesContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
